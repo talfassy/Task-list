@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
+
+  
+  <style>
+    .success, .error, .deletemsg, .delete {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: rgb(115, 180, 255);
+      border-radius: 10px;
+      width: 170px;
+      text-align: center;
+    }
+
+    .error {
+      background: rgb(255, 159, 215);
+      border-radius: 10px;
+      width: 170px;
+      text-align: center;
+    }
+
+    .deletemsg{
+      background: #ffcc99;
+      border-radius: 10px;
+      width: 170px;
+      text-align: center; 
+    }
+
+    .delete{
+    color: #9ae59a;
+    }
+  </style>
+  <title>Task List</title>
+</head>
+<body>
+  <div class="container">
+    <h1 style=" color:rgb(255, 159, 215); font-size: 37px; font-weight: bold; margin-top: 20px; font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif ;" >My tasks list</h1>
+      <h4 style=" color:#ffcc99; font-size: 20px; font-weight: bold; margin-top: 5px; font-family: 'Anton', sans-serif;
+      font-family: 'Open Sans Condensed', sans-serif ;" > Add new task :</h4>
+    <form id="book-form" style="max-width: 500px;">
+      <div>
+        <label for="title" style="font-size: 20px; font-family: 'Anton', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;">Title</label>
+        <input type="text" id="title" class="u-full-width" style="color:rgb(185, 185, 185); font-size:20px; font-family: 'Kalam', cursive; ">
+      </div>
+      <div>
+        <label for="author" style="font-size: 20px; font-family: 'Anton', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;">Info</label>
+        <input type="text" id="author" class="u-full-width" style="color:rgb(185, 185, 185); font-size:20px; font-family: 'Kalam', cursive; ">
+      </div>
+      <div>
+        <label for="isbn" style="font-size: 20px; font-family: 'Anton', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;">Date</label>
+        <input type="date" id="isbn" class="u-full-width" style="color:rgb(185, 185, 185); font-size:20px; font-family: 'Kalam', cursive; ">
+      </div>
+      <div>
+        <input type="submit" style=" background-color:#ffffff; color:rgb(115, 180, 255); font-size: 18px; font-family: 'Open Sans Condensed', sans-serif;"  value="Submit" >
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr style=" color:#9ae59a; font-family: 'Open Sans Condensed', sans-serif;">
+          <th style="font-size: 20px; font-family: 'Open Sans Condensed', sans-serif;">Title</th>
+          <th style="font-size: 20px; font-family: 'Open Sans Condensed', sans-serif;">Info</th>
+          <th style="font-size: 20px; font-family: 'Open Sans Condensed', sans-serif;">Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody style="font-size:18px; font-family: 'Kalam', cursive;" id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> <!--font awesome-->
+  <script src="app.js"></script>
+</body>
+</html>
